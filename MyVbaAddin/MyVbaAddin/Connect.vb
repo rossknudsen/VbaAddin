@@ -125,7 +125,8 @@ Public Class Connect
         ' IMPORTANT: ensure that you use the same ProgId value used in the ProgId attribute of the UserControlHost class
         progId = "MyVbaAddin.UserControlHost"
 
-        toolWindow = _VBE.Windows.CreateToolWindow(_AddIn, progId, toolWindowCaption, toolWindowGuid, userControlObject)
+        'toolWindow = _VBE.Windows.CreateToolWindow(_AddIn, progId, toolWindowCaption, toolWindowGuid, userControlObject)
+        toolWindow = _VBE.Windows.CreateToolWindowEx(_AddIn, progId, toolWindowCaption, toolWindowGuid, userControlObject)
         userControlHost = DirectCast(userControlObject, UserControlHost)
 
         toolWindow.Visible = True
