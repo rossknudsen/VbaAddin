@@ -3,20 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "MyVbaAddin", "MyVbaAddin\MyVbaAddin.vbproj", "{B20B5D12-9F99-41A8-B0D7-01D50F19446B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExcelApi", "Excel\ExcelApi.csproj", "{43C2FFD2-1680-490A-B0CF-BE425D6EEC7C}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetOffice", "NetOffice\NetOffice.csproj", "{65442327-D01F-4ECB-8C39-6D5C7622A80F}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OfficeApi", "Office\OfficeApi.csproj", "{79B19A83-A79F-446C-9B7E-9B595E918E40}"
-	ProjectSection(ProjectDependencies) = postProject
-		{65442327-D01F-4ECB-8C39-6D5C7622A80F} = {65442327-D01F-4ECB-8C39-6D5C7622A80F}
-	EndProjectSection
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VBIDEApi", "VBIDE\VBIDEApi.csproj", "{ACD7DB2E-DDB2-4BBB-BDB9-C2FD953585C4}"
-	ProjectSection(ProjectDependencies) = postProject
-		{65442327-D01F-4ECB-8C39-6D5C7622A80F} = {65442327-D01F-4ECB-8C39-6D5C7622A80F}
-	EndProjectSection
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,22 +13,6 @@ Global
 		{B20B5D12-9F99-41A8-B0D7-01D50F19446B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B20B5D12-9F99-41A8-B0D7-01D50F19446B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B20B5D12-9F99-41A8-B0D7-01D50F19446B}.Release|Any CPU.Build.0 = Release|Any CPU
-		{43C2FFD2-1680-490A-B0CF-BE425D6EEC7C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{43C2FFD2-1680-490A-B0CF-BE425D6EEC7C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{43C2FFD2-1680-490A-B0CF-BE425D6EEC7C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{43C2FFD2-1680-490A-B0CF-BE425D6EEC7C}.Release|Any CPU.Build.0 = Release|Any CPU
-		{65442327-D01F-4ECB-8C39-6D5C7622A80F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{65442327-D01F-4ECB-8C39-6D5C7622A80F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{65442327-D01F-4ECB-8C39-6D5C7622A80F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{65442327-D01F-4ECB-8C39-6D5C7622A80F}.Release|Any CPU.Build.0 = Release|Any CPU
-		{79B19A83-A79F-446C-9B7E-9B595E918E40}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{79B19A83-A79F-446C-9B7E-9B595E918E40}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{79B19A83-A79F-446C-9B7E-9B595E918E40}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{79B19A83-A79F-446C-9B7E-9B595E918E40}.Release|Any CPU.Build.0 = Release|Any CPU
-		{ACD7DB2E-DDB2-4BBB-BDB9-C2FD953585C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{ACD7DB2E-DDB2-4BBB-BDB9-C2FD953585C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{ACD7DB2E-DDB2-4BBB-BDB9-C2FD953585C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{ACD7DB2E-DDB2-4BBB-BDB9-C2FD953585C4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

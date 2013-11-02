@@ -117,17 +117,14 @@ Public Class Connect
                                       ByVal toolWindowGuid As String, _
                                       ByVal toolWindowUserControl As UserControl) As Window
 
-        Dim userControlObject As Object = Nothing
-        Dim userControlHost As UserControlHost
-        Dim toolWindow As Window
-        Dim progId As String
+        Const progId As String = "MyVbaAddin.UserControlHost"
 
-        ' IMPORTANT: ensure that you use the same ProgId value used in the ProgId attribute of the UserControlHost class
-        progId = "MyVbaAddin.UserControlHost"
-
-        'toolWindow = _VBE.Windows.CreateToolWindow(_AddIn, progId, toolWindowCaption, toolWindowGuid, userControlObject)
-        toolWindow = _VBE.Windows.CreateToolWindowEx(_AddIn, progId, toolWindowCaption, toolWindowGuid, userControlObject)
-        userControlHost = DirectCast(userControlObject, UserControlHost)
+        Dim userControlHost As UserControlHost = New UserControlHost
+        Dim toolWindow As Window = _VBE.Windows.CreateToolWindowEx(_AddIn, _
+                                                                   progId, _
+                                                                   toolWindowCaption, _
+                                                                   toolWindowGuid, _
+                                                                   userControlHost)
 
         toolWindow.Visible = True
 
